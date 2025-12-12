@@ -627,6 +627,21 @@
             <span class="value">{{ obj_temp }} °C</span>
         </div>
 
+
+          <hr>
+
+        <h2>
+            Bot Live Information
+            <span>Mannual Control/span>
+        </h2>
+        <form method="post" class="btn-row">
+            <button class="btn btn-on" name="light_action" value="on">On</button>
+            <button class="btn btn-off" name="light_action" value="off">Off</button>
+        </form>
+        <p class="current-state">
+            Current state: <span>{{ 'ON' if bot_on else 'OFF' }}</span>
+        </p>
+
         <hr>
 
         <h2>
@@ -640,6 +655,8 @@
         <p class="current-state">
             Current state: <span>{{ 'ON' if headlight_on else 'OFF' }}</span>
         </p>
+
+        <hr>
 
         <p style="margin-top: 10px;">
             <a href="https://davpssahibabad.github.io/robot_live_media/" class="back-link">
